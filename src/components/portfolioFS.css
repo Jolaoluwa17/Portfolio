@@ -1,0 +1,59 @@
+.portfolio-FS {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.portfolio-left,
+.portfolio-middle,
+.portfolio-right {
+  /* background-color: red; */
+  width: 270px;
+  height: 300px;
+  padding: 5px;
+}
+.portfolio-left h1 {
+  text-align: right;
+  font-family: "Salsa";
+}
+.portfolio-left p {
+  font-family: "Lato";
+  margin-bottom: 0px !important;
+  text-align: justify;
+}
+.portfolio-middle .profile-picture {
+  text-align: center;
+  width: 270px;
+}
+.portfolio-middle .profile-picture img {
+  width: 220px;
+  height: 260px;
+  border-radius: 200px 200px 0px 0px;
+}
+.portfolio-middle .profile-picture h4 {
+  /* margin-top: -0.05px; */
+  width: 100px;
+  margin-left: 8%;
+  text-align: left;
+  font-family: "Salsa";
+  margin-top: 15px;
+}
+.portfolio-right{
+    font-family: "Lato";
+}
+.portfolio-right h3{
+    margin-top: 30%;
+}
+.portfolio-right .contact{
+    display: flex;
+    width: 260px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 10px;
+    margin-top: 6%;
+}
+.portfolio-right .contact b{
+    width: 50px;
+}
+.portfolio-right .contact span{
+    width: 150px;
+}

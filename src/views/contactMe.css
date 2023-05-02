@@ -1,0 +1,45 @@
+.contact-me {
+  padding: 30px;
+  padding-left: 150px;
+  padding-right: 120px;
+  height: 78.9vh;
+}
+.contact-container {
+  min-height: calc(70vh - 5px * 2);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 2%;
+  justify-content: center;
+}
+.contact-me-title .form {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+.form-item {
+  width: 98%;
+  margin-bottom: 3%;
+}
+.contact-me-title .form-item input {
+  width: 95%;
+  height: 30px;
+  padding: 10px;
+  outline: none;
+}
+.send-btn {
+  display: flex;
+  justify-content: flex-end;
+  width: 91.8%;
+}
+.send-btn button {
+  padding: 15px;
+  background-color: #fe5b02;
+  color: white;
+  border: none;
+}
+

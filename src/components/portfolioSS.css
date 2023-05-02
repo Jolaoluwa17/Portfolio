@@ -1,0 +1,19 @@
+.portfolio-SS {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+.portfolio-SS-left,
+.portfolio-SS-right {
+  height: 150px;
+  padding: 5px;
+  /* background-color: red; */
+  font-family: "Lato";
+}
+.portfolio-SS-right .content .content-title{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}

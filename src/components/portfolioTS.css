@@ -1,0 +1,17 @@
+.portfolio-TS {
+  margin-top: 5%;
+}
+.portfolio-TS-left {
+  font-family: "Lato";
+}
+.portfolio-TS-left .content{
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+.portfolio-TS-left .content .circle{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: black;
+}
