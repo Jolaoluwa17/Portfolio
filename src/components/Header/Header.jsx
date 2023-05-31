@@ -14,7 +14,7 @@ export const Header = ({ handleClick, isOn }) => {
             <NavLink to="/portfolio" className="no-underline">
               <li>Portfolio</li>
             </NavLink>
-            <NavLink to="/" className="no-underline">
+            <NavLink to="/skills" className="no-underline">
               <li>My Skills</li>
             </NavLink>
             <li>

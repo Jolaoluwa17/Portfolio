@@ -1,3 +1,6 @@
-.landing-page{
-    height: 86.7vh;
+.landing-page {
+  height: 86.7vh;
+  width: 80%;
+  padding-left: 150px;
+  padding-right: 150px;
 }

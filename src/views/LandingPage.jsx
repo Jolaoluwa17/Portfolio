@@ -1,6 +1,7 @@
 import React from "react";
-import FirstSection from "../components/FirstSection";
-import "./landingPage.css"
+import FirstSection from "../components/First Section/FirstSection";
+
+import "./landingPage.css";
 
 export const LandingPage = ({ handleClick, isOn }) => {
   return (

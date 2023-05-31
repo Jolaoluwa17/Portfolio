@@ -6,7 +6,6 @@
 .portfolio-left,
 .portfolio-middle,
 .portfolio-right {
-  /* background-color: red; */
   width: 270px;
   height: 300px;
   padding: 5px;
@@ -19,21 +18,25 @@
   font-family: "Lato";
   margin-bottom: 0px !important;
   text-align: justify;
+  font-size: 12px;
+}
+.portfolio-middle{
+  padding: 10px;
 }
 .portfolio-middle .profile-picture {
   text-align: center;
   width: 270px;
+  height: 100%;
 }
 .portfolio-middle .profile-picture img {
   width: 220px;
   height: 260px;
+  object-fit: contain;
   border-radius: 200px 200px 0px 0px;
 }
 .portfolio-middle .profile-picture h4 {
-  /* margin-top: -0.05px; */
-  width: 100px;
-  margin-left: 8%;
-  text-align: left;
+  width: 100%;
+  text-align: center;
   font-family: "Salsa";
   margin-top: 15px;
 }

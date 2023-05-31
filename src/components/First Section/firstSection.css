@@ -1,0 +1,50 @@
+.first-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.name {
+  width: 50%;
+}
+.welcome-text{
+  margin-top: 10%;
+  font-size: 50px;
+  font-weight: bold;
+  width: 70%;
+}
+.name p {
+  width: 90%;
+  text-align: justify;
+}
+.name .hire-btn {
+  padding: 12px;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+  background-color: #fe5b02;
+  color: white;
+  cursor: pointer;
+  font-size: 17px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100px;
+  margin-top: 5%;
+}
+.illustration-one {
+  width: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.illustration-one img{
+  width: 600px;
+  height: 400px;
+}
+
+/* Dark Mode */
+.first-section .dark-mode h3,
+.first-section .dark-mode p {
+  color: white;
+}

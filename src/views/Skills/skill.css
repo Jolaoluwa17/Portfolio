@@ -1,0 +1,19 @@
+.skills {
+  width: 80%;
+  margin-left: 150px;
+  margin-right: 150px;
+  height: 300px;
+}
+
+.skills .skills-container {
+  width: 50%;
+  padding: 20px;
+}
+
+.skills-header {
+  font-weight: bold;
+  width: 100%;
+}
+.skills-content p{
+    text-align: justify;
+}

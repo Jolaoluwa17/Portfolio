@@ -7,7 +7,7 @@ import { PortfolioTS } from "../components/PortfolioTS";
 export const PortfolioOutline = () => {
   return (
     <div className="portfolio-outline">
-      <div className="portfolio-container">
+      <div className={`portfolio-container`}>
         <div className="portfolio-outline-main">
           <PortfolioFS />
           <hr />

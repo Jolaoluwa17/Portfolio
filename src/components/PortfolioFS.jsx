@@ -1,6 +1,5 @@
 import React from "react";
 import "./portfolioFS.css";
-import profilePicture from "../Images/ProfilePicture.jpg";
 import { IoCallSharp, IoHome } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { BsFillArrowLeftCircleFill } from "react-icons/bs";
@@ -13,21 +12,25 @@ export const PortfolioFS = () => {
     <div className="portfolio-FS">
       <div className="portfolio-left">
         <div className="portfolio-left-title">
-          <span className="back-btn" onClick={() => navigate(-1)}>
+          <span className="back-btn" onClick={() => navigate("/")}>
             <BsFillArrowLeftCircleFill /> Back
           </span>
           <h1>OLUSANYA JOLAOLUWA OLUWAPELUMI</h1>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt a
-            ex eos sapiente nulla vel fugiat placeat. Error, quas. Inventore
-            deleniti aliquid sit sed quaerat magnam, assumenda minus id
-            molestias?
+            Experienced with various stages of the development cycle for dynamic
+            web projects. Well versed in numerous programming languages
+            including HTML5, CSS, JavaScript, ReactJS. Sound background in
+            project management. Frequently praised as hard working by my peers,
+            i can be relied upon to help your company achieve its goals
           </p>
         </div>
       </div>
       <div className="portfolio-middle">
         <div className="profile-picture">
-          <img src={profilePicture} alt="" />
+          <img
+            src="https://res.cloudinary.com/dneawlwcp/image/upload/v1685098771/Portfolio/ali-morshedlou-WMD64tMfc4k-unsplash_ymhcyc.jpg"
+            alt=""
+          />
           <h4>Olusanya Jolaoluwa</h4>
         </div>
       </div>

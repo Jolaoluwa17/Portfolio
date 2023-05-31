@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Portfolio } from "./views/Portfolio";
 import { PortfolioOutline } from "./views/PortfolioOutline";
 import { ContactMe } from "./views/ContactMe";
+import { Skills } from "./views/Skills/Skills";
 function App() {
   const [isOn, setIsOn] = useState(false);
 
@@ -22,6 +23,10 @@ function App() {
           <Route
             path="/contactMe"
             element={<ContactMe handleClick={handleClick} isOn={isOn} />}
+          />
+          <Route
+            path="/skills"
+            element={<Skills handleClick={handleClick} isOn={isOn} />}
           />
         </Route>
         <Route path="/portfolio" element={<PortfolioOutline />} />
