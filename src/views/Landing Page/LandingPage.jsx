@@ -1,5 +1,5 @@
 import React from "react";
-import FirstSection from "../components/First Section/FirstSection";
+import FirstSection from "../../components/First Section/FirstSection";
 
 import "./landingPage.css";
 

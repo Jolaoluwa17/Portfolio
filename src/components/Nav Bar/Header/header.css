@@ -16,23 +16,27 @@
   height: 40px;
   width: 100%;
 }
-.right-nav-bar{
+.right-nav-bar {
   width: 50%;
+  margin: 0px;
 }
 .right-nav-bar ul {
   display: flex;
   flex-direction: row;
-  width: 400px;
   justify-content: space-between;
   list-style: none;
   color: black;
+  margin-left: 0px;
+  padding: 0px;
 }
-.left-nav-bar{
+.right-nav-bar ul li {
+  text-align: left;
+}
+.left-nav-bar {
   width: 50%;
 }
 .left-nav-bar {
   display: flex;
-  width: 300px;
   justify-content: flex-end;
 }
 .left-nav-bar button {

@@ -1,10 +1,11 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import { LandingPage } from "./views/LandingPage";
+import { LandingPage } from "./views/Landing Page/LandingPage";
 import { useState } from "react";
-import { Portfolio } from "./views/Portfolio";
-import { PortfolioOutline } from "./views/PortfolioOutline";
-import { ContactMe } from "./views/ContactMe";
+import { Portfolio } from "./components/Nav Bar/Header/Portfolio";
+import { PortfolioOutline } from "./views/Portfolio Outline/PortfolioOutline";
+import { ContactMe } from "./views/Contact Me/ContactMe";
 import { Skills } from "./views/Skills/Skills";
+import { Projects } from "./views/Projects/Projects";
 function App() {
   const [isOn, setIsOn] = useState(false);
 
@@ -27,6 +28,10 @@ function App() {
           <Route
             path="/skills"
             element={<Skills handleClick={handleClick} isOn={isOn} />}
+          />
+          <Route
+            path="/projects"
+            element={<Projects handleClick={handleClick} isOn={isOn} />}
           />
         </Route>
         <Route path="/portfolio" element={<PortfolioOutline />} />

@@ -1,8 +1,8 @@
 import React from "react";
 import "./portfolioOutline.css";
-import { PortfolioFS } from "../components/PortfolioFS";
-import { PortfolioSS } from "../components/PortfolioSS";
-import { PortfolioTS } from "../components/PortfolioTS";
+import { PortfolioFS } from "../../components/PortfolioFS";
+import { PortfolioSS } from "../../components/PortfolioSS";
+import { PortfolioTS } from "../../components/PortfolioTS";
 
 export const PortfolioOutline = () => {
   return (

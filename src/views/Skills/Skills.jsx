@@ -10,7 +10,7 @@ export const Skills = ({ isOn }) => {
           <h1>Skills</h1>
         </div>
         <div className="skills-content">
-          <h3 style={{ fontWeight: "500" }}>My Technical Level</h3>
+          <h3 style={{ fontWeight: "500" }}>Technical Level</h3>
           <p>
             I am skilled and proficient in various programming languages, with a
             strong focus on web development. With expertise in ReactJS,

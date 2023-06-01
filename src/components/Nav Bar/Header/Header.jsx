@@ -11,11 +11,14 @@ export const Header = ({ handleClick, isOn }) => {
             <NavLink to="/" className="no-underline">
               <li>About Me</li>
             </NavLink>
-            <NavLink to="/portfolio" className="no-underline">
-              <li>Portfolio</li>
-            </NavLink>
             <NavLink to="/skills" className="no-underline">
               <li>My Skills</li>
+            </NavLink>
+            <NavLink to="/projects" className="no-underline">
+              <li>Projects</li>
+            </NavLink>
+            <NavLink to="/portfolio" className="no-underline">
+              <li>Portfolio</li>
             </NavLink>
             <li>
               <button
