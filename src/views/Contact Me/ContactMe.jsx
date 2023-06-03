@@ -1,16 +1,79 @@
 import React from "react";
 import "./contactMe.css";
+import { useState, useRef } from "react";
+import { GiCancel } from "react-icons/gi";
+import emailjs from "emailjs-com";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
 
 export const ContactMe = ({ handleClick, isOn }) => {
+  const formRef = useRef(null); // Create a ref for the form element
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  // const [dataAOSValue, setDataAOSValue] = useState();
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Send email using EmailJS
+    emailjs
+      .sendForm(
+        "service_y3fcjr7",
+        "template_mzrvkni",
+        formRef.current,
+        "A7u0Crj33k1DwdwQq"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          // Email sent successfully
+          console.log("message sent");
+          setFormSubmitted(true);
+          // Clear the success message after 5 seconds
+          setTimeout(() => {
+            setFormSubmitted(false);
+          }, 5000);
+        },
+        (error) => {
+          console.log(error.text);
+          // Email sending failed
+          console.log("There was a problem");
+        }
+      );
+
+    // Reset form data
+    setFormData({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
+  };
+
   return (
     <div className={`contact-me ${isOn ? "dark-mode" : "light-mode"}`}>
       <div className="contact-container">
         <div className="left-navigation">
           <div className="contact-me-title">
             <h1 className={`${isOn ? "dark-mode" : "light-mode"}`}>
-              CONTACT ME
+              CONTACT ME &#128071;&#127997;
             </h1>
           </div>
           <div className="contact-me-title">
@@ -26,6 +89,8 @@ export const ContactMe = ({ handleClick, isOn }) => {
               }}
               noValidate
               autoComplete="off"
+              onSubmit={handleSubmit}
+              ref={formRef} // Set the ref on the form element
             >
               <div className="form">
                 <TextField
@@ -33,18 +98,27 @@ export const ContactMe = ({ handleClick, isOn }) => {
                   label="Name"
                   variant="outlined"
                   style={{ width: "48%" }}
+                  value={formData.name}
+                  onChange={handleChange}
+                  name="name"
                 />
                 <TextField
                   id="outlined-basic"
                   label="Email"
                   variant="outlined"
                   style={{ width: "48%" }}
+                  value={formData.email}
+                  onChange={handleChange}
+                  name="email"
                 />
                 <TextField
                   id="outlined-basic"
                   label="Subject"
                   variant="outlined"
                   style={{ width: "100%", marginTop: "4%" }}
+                  value={formData.subject}
+                  onChange={handleChange}
+                  name="subject"
                 />
                 <TextField
                   id="outlined-multiline-static"
@@ -52,27 +126,34 @@ export const ContactMe = ({ handleClick, isOn }) => {
                   multiline
                   rows={4}
                   style={{ width: "100%", marginTop: "4%" }}
+                  value={formData.message}
+                  onChange={handleChange}
+                  name="message"
                 />
+                <div className="send-btn">
+                  <button type="submit" disabled={!formData.name || !formData.email || !formData.subject || !formData.message}>Submit</button>
+                </div>
               </div>
             </Box>
-            <div className="send-btn">
-              <button>Send Message</button>
-            </div>
           </div>
         </div>
         <div className="right-navigation">
-          {/* <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.7996105457046!2d3.3814625749447713!3d6.546968393445971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8d74a1d96faf%3A0xc6ca00ab91edfc5c!2sphase%202%2C%2024%20Lanre%20Awolokun%20St%2C%20Somolu%20102216%2C%20Lagos!5e0!3m2!1sen!2sng!4v1682840348211!5m2!1sen!2sng"
-            width="100%"
-            height="99.5%"
-            title="showing google map"
-            style={{ border: "none" }}
-          ></iframe> */}
           <div className="illustration-2">
+            {formSubmitted && (
+              <div className="successfull-box" data-aos="fade-left">
+                <p> &#9989; Message Sent &#128076;&#127997;</p>
+                <GiCancel />
+              </div>
+            )}
             <img
               src="https://res.cloudinary.com/dneawlwcp/image/upload/v1685622473/Portfolio/illustrations/4111242_1_snfz7n.png"
               alt=""
             />
+            {/* <iframe
+              src="https://embed.lottiefiles.com/animation/94599"
+              style={{ width: "500px", height: "500px", border: "none" }}
+              title="ContactMe"
+            ></iframe> */}
           </div>
         </div>
       </div>

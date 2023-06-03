@@ -1,6 +1,6 @@
 .contact-me {
   padding: 30px;
-  padding-left: 150px;
+  padding-left: 110px;
   padding-right: 120px;
   height: 78.9vh;
 }
@@ -37,7 +37,8 @@
 .send-btn {
   display: flex;
   justify-content: flex-end;
-  width: 91.8%;
+  width: 100%;
+  margin-top: 2%;
 }
 .send-btn button {
   padding: 15px;
@@ -45,6 +46,13 @@
   color: white;
   border: none;
   border-radius: 5px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.send-btn button:disabled{
+  background-color: grey;
+  cursor:default ;
 }
 .right-navigation {
   display: flex;
@@ -58,4 +66,16 @@
 .right-navigation .illustration-2 img {
   width: 80%;
   height: 60%;
+}
+.successfull-box{
+  height: 60px;
+  width: 250px;
+  position: absolute;
+  top: 12%;
+  right: 10%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 0px 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }

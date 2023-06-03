@@ -4,6 +4,7 @@ import { BsFillSendFill } from "react-icons/bs";
 import { Typewriter } from "react-simple-typewriter";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 AOS.init({
   easing: "ease", // default easing for AOS animations
   duration: 2000, // values from 0 to 3000, with step 50ms
@@ -37,15 +38,22 @@ export const FirstSection = ({ isOn }) => {
           from Nigeria, I am actively seeking opportunities to develop my skills
           and gain experience in the field of front-end development.
         </p>
-        <div className="hire-btn">
-          Hire Me <BsFillSendFill />
-        </div>
+        <Link to="/contactMe" style={{ textDecoration: "none" }}>
+          <div className="hire-btn">
+            Hire Me <BsFillSendFill />
+          </div>
+        </Link>
       </div>
       <div className="illustration-one">
         <img
           src="https://res.cloudinary.com/dneawlwcp/image/upload/v1685541918/Portfolio/illustrations/19362653_kcxszx.png"
           alt=""
         />
+        {/* <iframe
+          src="https://embed.lottiefiles.com/animation/60584"
+          style={{ width: "500px", height: "500px", border: "none" }}
+          title="Welcome"
+        ></iframe> */}
       </div>
     </div>
   );
