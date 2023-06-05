@@ -2,9 +2,11 @@ import React from "react";
 import "./contactMe.css";
 import { useState, useRef } from "react";
 import { GiCancel } from "react-icons/gi";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 import emailjs from "emailjs-com";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
+import { Icons } from "../../components/Icons/Icons";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
@@ -67,8 +69,42 @@ export const ContactMe = ({ handleClick, isOn }) => {
     });
   };
 
+  const darkTheme = createTheme({
+    palette: {
+      mode: "dark",
+    },
+    components: {
+      MuiTextField: {
+        styleOverrides: {
+          root: {
+            color: "black",
+            "& .MuiOutlinedInput-root": {
+              "& fieldset": {
+                borderColor: "white",
+              },
+            },
+          },
+        },
+      },
+      MuiBox: {
+        styleOverrides: {
+          root: {
+            backgroundColor: "black",
+          },
+        },
+      },
+    },
+  });
+
+  const lightTheme = createTheme({
+    palette: {
+      mode: "light",
+    },
+  });
+
   return (
     <div className={`contact-me ${isOn ? "dark-mode" : "light-mode"}`}>
+      <Icons isOn={isOn} />
       <div className="contact-container">
         <div className="left-navigation">
           <div className="contact-me-title">
@@ -82,59 +118,71 @@ export const ContactMe = ({ handleClick, isOn }) => {
               or large projects. However, if you have other request or question,
               don't hesitate to use the form.
             </p>
-            <Box
-              component="form"
-              sx={{
-                "& > :not(style)": { m: 1, width: "25ch" },
-              }}
-              noValidate
-              autoComplete="off"
-              onSubmit={handleSubmit}
-              ref={formRef} // Set the ref on the form element
-            >
-              <div className="form">
-                <TextField
-                  id="outlined-basic"
-                  label="Name"
-                  variant="outlined"
-                  style={{ width: "48%" }}
-                  value={formData.name}
-                  onChange={handleChange}
-                  name="name"
-                />
-                <TextField
-                  id="outlined-basic"
-                  label="Email"
-                  variant="outlined"
-                  style={{ width: "48%" }}
-                  value={formData.email}
-                  onChange={handleChange}
-                  name="email"
-                />
-                <TextField
-                  id="outlined-basic"
-                  label="Subject"
-                  variant="outlined"
-                  style={{ width: "100%", marginTop: "4%" }}
-                  value={formData.subject}
-                  onChange={handleChange}
-                  name="subject"
-                />
-                <TextField
-                  id="outlined-multiline-static"
-                  label="Message"
-                  multiline
-                  rows={4}
-                  style={{ width: "100%", marginTop: "4%" }}
-                  value={formData.message}
-                  onChange={handleChange}
-                  name="message"
-                />
-                <div className="send-btn">
-                  <button type="submit" disabled={!formData.name || !formData.email || !formData.subject || !formData.message}>Submit</button>
+            <ThemeProvider theme={isOn ? darkTheme : lightTheme}>
+              <Box
+                component="form"
+                sx={{
+                  "& > :not(style)": { m: 1, width: "25ch" },
+                }}
+                noValidate
+                autoComplete="off"
+                onSubmit={handleSubmit}
+                ref={formRef} // Set the ref on the form element
+              >
+                <div className="form">
+                  <TextField
+                    id="outlined-basic"
+                    label="Name"
+                    variant="outlined"
+                    style={{ width: "48%" }}
+                    value={formData.name}
+                    onChange={handleChange}
+                    name="name"
+                  />
+                  <TextField
+                    id="outlined-basic"
+                    label="Email"
+                    variant="outlined"
+                    style={{ width: "48%" }}
+                    value={formData.email}
+                    onChange={handleChange}
+                    name="email"
+                  />
+                  <TextField
+                    id="outlined-basic"
+                    label="Subject"
+                    variant="outlined"
+                    style={{ width: "100%", marginTop: "4%" }}
+                    value={formData.subject}
+                    onChange={handleChange}
+                    name="subject"
+                  />
+                  <TextField
+                    id="outlined-multiline-static"
+                    label="Message"
+                    multiline
+                    rows={4}
+                    style={{ width: "100%", marginTop: "4%" }}
+                    value={formData.message}
+                    onChange={handleChange}
+                    name="message"
+                  />
+                  <div className="send-btn">
+                    <button
+                      type="submit"
+                      disabled={
+                        !formData.name ||
+                        !formData.email ||
+                        !formData.subject ||
+                        !formData.message
+                      }
+                    >
+                      Submit
+                    </button>
+                  </div>
                 </div>
-              </div>
-            </Box>
+              </Box>
+            </ThemeProvider>
           </div>
         </div>
         <div className="right-navigation">

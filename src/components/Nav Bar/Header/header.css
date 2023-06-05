@@ -2,9 +2,11 @@
   color: white;
 }
 .header {
-  padding: 30px;
-  padding-left: 150px;
-  padding-right: 150px;
+  padding: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+  position: fixed;
+  width: 80%;
 }
 .no-underline {
   text-decoration: none;
@@ -31,6 +33,28 @@
 }
 .right-nav-bar ul li {
   text-align: left;
+  padding: 10px;
+  position: relative;
+  color: #a0a0a0;
+}
+.right-nav-bar ul .nav-hover-effect:after {
+  content: "";
+  position: absolute;
+  background-color: #e74fd5;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -2px;
+  transition: 0.3s;
+}
+.light-mode .right-nav-bar ul .nav-hover-effect:hover {
+  color: black;
+}
+.dark-mode .right-nav-bar ul .nav-hover-effect:hover {
+  color: white;
+}
+.right-nav-bar ul .nav-hover-effect:hover:after {
+  width: 100%;
 }
 .left-nav-bar {
   width: 50%;
@@ -49,7 +73,19 @@
   height: 100%;
   cursor: pointer;
 }
+.mode-changer {
+  display: flex;
+  align-items: center;
+  width: 70px;
+  justify-content: space-between;
+}
 
+.active li{
+  color: #e74fd5 !important;
+  font-weight: 500;
+  
+}
+/* fe5b02 */
 /* For Light Mode and Dark Mode */
 .toggle-button {
   background-color: #d1d1d1;
@@ -59,7 +95,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 2px;
-  width: 40px;
+  width: 41px;
   height: 20px;
   cursor: pointer;
 }
@@ -69,9 +105,11 @@
   width: 15px;
   height: 15px;
   transition: transform 0.2s ease-in-out;
+  border: none;
 }
 .on {
   background-color: black;
+  border: 1px solid white;
 }
 .on .circle {
   transform: translateX(20px);

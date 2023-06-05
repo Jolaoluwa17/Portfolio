@@ -7,7 +7,7 @@ import { ContactMe } from "./views/Contact Me/ContactMe";
 import { Skills } from "./views/Skills/Skills";
 import { Projects } from "./views/Projects/Projects";
 function App() {
-  const [isOn, setIsOn] = useState(false);
+  const [isOn, setIsOn] = useState(true);
 
   const handleClick = () => {
     setIsOn(!isOn);

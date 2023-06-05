@@ -1,110 +1,114 @@
 .box-container {
-    height: 60vh;
-    width: 30vw;
-    position: absolute;
-    top: 50vh;
-    left: 75vw;
-    transform: translate(-50%, -50%);
-    perspective: 1000px;
+  height: 60vh;
+  width: 30vw;
+  position: absolute;
+  top: 50vh;
+  left: 75vw;
+  transform: translate(-50%, -50%);
+  perspective: 1000px;
+}
+.box {
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  transform-style: preserve-3d;
+  animation: animate 5s infinite;
+}
+@keyframes animate {
+  0% {
+    transform: rotateX(45deg) rotateY(-45deg);
   }
-  .box {
-    height: 250px;
-    width: 250px;
-    position: absolute;
-    top: 100px;
-    left: 100px;
-    transform-style: preserve-3d;
-    animation: animate 5s infinite;
+  25% {
+    transform: rotateX(-45deg) rotateY(-45deg);
   }
-  @keyframes animate {
-    0% {
-      transform: rotateX(45deg) rotateY(-45deg);
-    }
-    25% {
-      transform: rotateX(-45deg) rotateY(-45deg);
-    }
-    50% {
-      transform: rotateX(45deg) rotateY(45deg);
-    }
-    75% {
-      transform: rotateX(-45deg) rotateY(45deg);
-    }
-    100% {
-      transform: rotateX(45deg) rotateY(-45deg);
-    }
+  50% {
+    transform: rotateX(45deg) rotateY(45deg);
   }
-  .card {
-    height: 250px;
-    width: 250px;
-    text-align: center;
-    padding: 100px 0px;
-    color: black;
-    background: white;
-    /* opacity: 50%; */
-    border: 2px solid black;
-    font-size: 32px;
-    box-sizing: border-box;
-    position: absolute;
-    transition: all 1s;
+  75% {
+    transform: rotateX(-45deg) rotateY(45deg);
   }
-  #front {
-    transform: translateZ(125px);
+  100% {
+    transform: rotateX(45deg) rotateY(-45deg);
   }
-  #back {
-    transform: translateZ(-125px);
-  }
-  #left {
-    right: 125px;
-    transform: rotateY(-90deg);
-  }
-  #right {
-    left: 125px;
-    transform: rotateY(90deg);
-  }
-  #top {
-    bottom: 125px;
-    transform: rotateX(90deg);
-  }
-  #bottom {
-    top: 125px;
-    transform: rotateX(-90deg);
-  }
-  .box-container button {
-    background: #fe5b02;
-    border: none;
-    font-size: 14px;
-    cursor: pointer;
-    position: absolute;
-    top: 500px;
-    left: 190px;
-    color: white;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 5px;
-  }
-  .box-container button:active {
-    background-color: #913300;
-  }
-  .box-container button:focus ~ .box #front {
-    transform: translateZ(180px) rotateY(360deg);
-  }
-  .box-container button:focus ~ .box #back {
-    transform: translateZ(-180px) rotateY(360deg);
-  }
-  .box-container button:focus ~ .box #left {
-    right: 180px;
-  }
-  .box-container button:focus ~ .box #right {
-    left: 180px;
-  }
-  .box-container button:focus ~ .box #top {
-    bottom: 180px;
-  }
-  .box-container button:focus ~ .box #bottom {
-    top: 180px;
-  }
-  .card img {
-    width: 20px;
-    height: 20px;
-  }
+}
+.card {
+  height: 250px;
+  width: 250px;
+  text-align: center;
+  padding: 100px 0px;
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+  font-size: 32px;
+  box-sizing: border-box;
+  position: absolute;
+  transition: all 1s;
+}
+.dark-mode .card {
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+}
+#front {
+  transform: translateZ(125px);
+}
+#back {
+  transform: translateZ(-125px);
+}
+#left {
+  right: 125px;
+  transform: rotateY(-90deg);
+}
+#right {
+  left: 125px;
+  transform: rotateY(90deg);
+}
+#top {
+  bottom: 125px;
+  transform: rotateX(90deg);
+}
+#bottom {
+  top: 125px;
+  transform: rotateX(-90deg);
+}
+.box-container button {
+  background: #fe5b02;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  position: absolute;
+  top: 500px;
+  left: 190px;
+  color: white;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+}
+.box-container button:active {
+  background-color: #913300;
+}
+.box-container button:focus ~ .box #front {
+  transform: translateZ(180px) rotateY(360deg);
+}
+.box-container button:focus ~ .box #back {
+  transform: translateZ(-180px) rotateY(360deg);
+}
+.box-container button:focus ~ .box #left {
+  right: 180px;
+}
+.box-container button:focus ~ .box #right {
+  left: 180px;
+}
+.box-container button:focus ~ .box #top {
+  bottom: 180px;
+}
+.box-container button:focus ~ .box #bottom {
+  top: 180px;
+}
+.card img {
+  width: 20px;
+  height: 20px;
+}

@@ -1,11 +1,12 @@
 import React from "react";
 import "./projects.css";
+import { Icons } from "../../components/Icons/Icons";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 AOS.init();
 
-export const Projects = () => {
+export const Projects = ({ isOn }) => {
   const handleView = () => {
     window.open(
       "https://library-management-system-frontend.vercel.app/",
@@ -19,7 +20,8 @@ export const Projects = () => {
     );
   };
   return (
-    <div className="projects">
+    <div className={`projects ${isOn ? "dark-mode" : "light-mode"}`}>
+      <Icons isOn={isOn} />
       <div className="projects-title">
         <h1>Latest Projects</h1>
       </div>
@@ -42,12 +44,12 @@ export const Projects = () => {
                 </div>
                 <div className="prog-lang">
                   <ul>
-                    <li>React Js</li>
-                    <li>CSS</li>
-                    <li>NodeJs</li>
-                    <li>ExpressJs</li>
-                    <li>MongoDB</li>
-                    <li>MaterialUI</li>
+                    <li style={{listStyle: "none"}}>React Js</li>
+                    <li style={{listStyle: "square"}}>CSS</li>
+                    <li style={{listStyle: "square"}}>NodeJs</li>
+                    <li style={{listStyle: "none"}}>ExpressJs</li>
+                    <li style={{listStyle: "square"}}>MongoDB</li>
+                    <li style={{listStyle: "square"}}>MaterialUI</li>
                   </ul>
                 </div>
                 <div className="interact-btn">

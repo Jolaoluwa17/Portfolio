@@ -1,5 +1,6 @@
 import React from "react";
 import "./firstSection.css";
+import { Icons } from "../Icons/Icons";
 import { BsFillSendFill } from "react-icons/bs";
 import { Typewriter } from "react-simple-typewriter";
 import AOS from "aos";
@@ -13,8 +14,9 @@ AOS.init({
 export const FirstSection = ({ isOn }) => {
   return (
     <div className="first-section">
+      <Icons isOn={isOn} />
       <div className={`name ${isOn ? "dark-mode" : "light-mode"}`}>
-        <div className="welcome-text">
+        <div className="welcome-text" style={{ height: "140px" }}>
           <Typewriter
             words={[" Hello!", "My Name is Jolaoluwa"]}
             cursor

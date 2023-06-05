@@ -1,0 +1,44 @@
+.icon-root {
+  position: absolute;
+  left: 5%;
+  height: 70%;
+  display: flex;
+  padding-top: 10%;
+}
+.icon-content {
+  width: 10%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+}
+.icon {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.line-top {
+  margin-bottom: 40px;
+  height: 100px;
+  width: 2px;
+  background-color: white;
+}
+.line-bottom {
+  margin-top: 40px;
+  height: 100px;
+  width: 2px;
+  background-color: white;
+}
+.light-mode .line-top {
+  margin-bottom: 40px;
+  height: 100px;
+  width: 2px;
+  background-color: black;
+}
+.light-mode .line-bottom {
+  margin-top: 40px;
+  height: 100px;
+  width: 2px;
+  background-color: black;
+}
