@@ -51,11 +51,6 @@ export const FirstSection = ({ isOn }) => {
           src="https://res.cloudinary.com/dneawlwcp/image/upload/v1685541918/Portfolio/illustrations/19362653_kcxszx.png"
           alt=""
         />
-        {/* <iframe
-          src="https://embed.lottiefiles.com/animation/60584"
-          style={{ width: "500px", height: "500px", border: "none" }}
-          title="Welcome"
-        ></iframe> */}
       </div>
     </div>
   );

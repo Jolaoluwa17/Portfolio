@@ -42,6 +42,7 @@
   justify-content: center;
 }
 .illustration-one img{
+  margin-top: 20%;
   width: 100%;
   height: 400px;
 }

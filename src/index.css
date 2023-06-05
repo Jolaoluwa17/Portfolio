@@ -27,4 +27,13 @@ code {
   color: white;
   outline: none;
 }
+.intro-loader{
+  text-align: center;
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
