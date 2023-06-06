@@ -46,7 +46,9 @@ export const Skills = ({ isOn }) => {
             <SpinningCube isOn={isOn} />
           </div>
         </div>
+        
       </div>
+      
     </div>
   );
 };

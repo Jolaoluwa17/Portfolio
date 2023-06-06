@@ -16,7 +16,11 @@
 }
 .icon {
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 22px;
+}
+.icon:hover {
+  color: #e74fd5 ;
+  cursor: pointer;
 }
 .line-top {
   margin-bottom: 40px;
@@ -41,4 +45,11 @@
   height: 100px;
   width: 2px;
   background-color: black;
+}
+
+/* Responsiveness */
+@media (max-width: 1040px) {
+  .icon-root {
+    display: none;
+  }
 }

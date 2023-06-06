@@ -103,105 +103,107 @@ export const ContactMe = ({ handleClick, isOn }) => {
   });
 
   return (
-    <div className={`contact-me ${isOn ? "dark-mode" : "light-mode"}`}>
-      <Icons isOn={isOn} />
-      <div className="contact-container">
-        <div className="left-navigation">
-          <div className="contact-me-title">
-            <h1 className={`${isOn ? "dark-mode" : "light-mode"}`}>
-              CONTACT ME &#128071;&#127997;
-            </h1>
-          </div>
-          <div className="contact-me-title">
-            <p>
-              I'm interested in freelance opportunities - especially ambitious
-              or large projects. However, if you have other request or question,
-              don't hesitate to use the form.
-            </p>
-            <ThemeProvider theme={isOn ? darkTheme : lightTheme}>
-              <Box
-                component="form"
-                sx={{
-                  "& > :not(style)": { m: 1, width: "25ch" },
-                }}
-                noValidate
-                autoComplete="off"
-                onSubmit={handleSubmit}
-                ref={formRef} // Set the ref on the form element
-              >
-                <div className="form">
-                  <TextField
-                    id="outlined-basic"
-                    label="Name"
-                    variant="outlined"
-                    style={{ width: "48%" }}
-                    value={formData.name}
-                    onChange={handleChange}
-                    name="name"
-                  />
-                  <TextField
-                    id="outlined-basic"
-                    label="Email"
-                    variant="outlined"
-                    style={{ width: "48%" }}
-                    value={formData.email}
-                    onChange={handleChange}
-                    name="email"
-                  />
-                  <TextField
-                    id="outlined-basic"
-                    label="Subject"
-                    variant="outlined"
-                    style={{ width: "100%", marginTop: "4%" }}
-                    value={formData.subject}
-                    onChange={handleChange}
-                    name="subject"
-                  />
-                  <TextField
-                    id="outlined-multiline-static"
-                    label="Message"
-                    multiline
-                    rows={4}
-                    style={{ width: "100%", marginTop: "4%" }}
-                    value={formData.message}
-                    onChange={handleChange}
-                    name="message"
-                  />
-                  <div className="send-btn">
-                    <button
-                      type="submit"
-                      disabled={
-                        !formData.name ||
-                        !formData.email ||
-                        !formData.subject ||
-                        !formData.message
-                      }
-                    >
-                      Submit
-                    </button>
+    <div className={`contact-root ${isOn ? "dark-mode" : "light-mode"}`}>
+      <div className={`contact-me ${isOn ? "dark-mode" : "light-mode"}`}>
+        <Icons isOn={isOn} />
+        <div className="contact-container">
+          <div className="left-navigation">
+            <div className="contact-me-title">
+              <h1 className={`${isOn ? "dark-mode" : "light-mode"}`}>
+                CONTACT ME &#128071;&#127997;
+              </h1>
+            </div>
+            <div className="contact-me-title">
+              <p>
+                I'm interested in freelance opportunities - especially ambitious
+                or large projects. However, if you have other request or
+                question, don't hesitate to use the form.
+              </p>
+              <ThemeProvider theme={isOn ? darkTheme : lightTheme}>
+                <Box
+                  component="form"
+                  sx={{
+                    "& > :not(style)": { m: 1, width: "25ch" },
+                  }}
+                  noValidate
+                  autoComplete="off"
+                  onSubmit={handleSubmit}
+                  ref={formRef} // Set the ref on the form element
+                >
+                  <div className="form">
+                    <TextField
+                      id="outlined-basic"
+                      label="Name"
+                      variant="outlined"
+                      style={{ width: "48%" }}
+                      value={formData.name}
+                      onChange={handleChange}
+                      name="name"
+                    />
+                    <TextField
+                      id="outlined-basic"
+                      label="Email"
+                      variant="outlined"
+                      style={{ width: "48%" }}
+                      value={formData.email}
+                      onChange={handleChange}
+                      name="email"
+                    />
+                    <TextField
+                      id="outlined-basic"
+                      label="Subject"
+                      variant="outlined"
+                      style={{ width: "100%", marginTop: "4%" }}
+                      value={formData.subject}
+                      onChange={handleChange}
+                      name="subject"
+                    />
+                    <TextField
+                      id="outlined-multiline-static"
+                      label="Message"
+                      multiline
+                      rows={4}
+                      style={{ width: "100%", marginTop: "4%" }}
+                      value={formData.message}
+                      onChange={handleChange}
+                      name="message"
+                    />
+                    <div className="send-btn">
+                      <button
+                        type="submit"
+                        disabled={
+                          !formData.name ||
+                          !formData.email ||
+                          !formData.subject ||
+                          !formData.message
+                        }
+                      >
+                        Submit
+                      </button>
+                    </div>
                   </div>
-                </div>
-              </Box>
-            </ThemeProvider>
+                </Box>
+              </ThemeProvider>
+            </div>
           </div>
-        </div>
-        <div className="right-navigation">
-          <div className="illustration-2">
-            {formSubmitted && (
-              <div className="successfull-box" data-aos="fade-left">
-                <p> &#9989; Message Sent &#128076;&#127997;</p>
-                <GiCancel />
-              </div>
-            )}
-            <img
-              src="https://res.cloudinary.com/dneawlwcp/image/upload/v1685622473/Portfolio/illustrations/4111242_1_snfz7n.png"
-              alt=""
-            />
-            {/* <iframe
+          <div className="right-navigation">
+            <div className="illustration-2">
+              {formSubmitted && (
+                <div className="successfull-box" data-aos="fade-left">
+                  <p> &#9989; Message Sent &#128076;&#127997;</p>
+                  <GiCancel />
+                </div>
+              )}
+              <img
+                src="https://res.cloudinary.com/dneawlwcp/image/upload/v1685622473/Portfolio/illustrations/4111242_1_snfz7n.png"
+                alt=""
+              />
+              {/* <iframe
               src="https://embed.lottiefiles.com/animation/94599"
               style={{ width: "500px", height: "500px", border: "none" }}
               title="ContactMe"
             ></iframe> */}
+            </div>
           </div>
         </div>
       </div>

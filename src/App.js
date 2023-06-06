@@ -29,7 +29,7 @@ function App() {
         <div className="intro-loader">
           <iframe
             src="https://embed.lottiefiles.com/animation/11792"
-            style={{ border: "none", height: "500px",  width: "500px" }}
+            style={{ border: "none", height: "500px", width: "500px" }}
             title="introLoader"
           ></iframe>
         </div>
