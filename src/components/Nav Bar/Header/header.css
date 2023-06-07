@@ -358,6 +358,11 @@
     top: 72%;
   }
 }
+@media (max-width: 485px) {
+  .header {
+    padding-top: 5%;
+  }
+}
 @media (max-width: 431px) {
   .mobile-nav {
     display: flex;

@@ -145,6 +145,9 @@
   }
 }
 @media (max-width: 485px) {
+  .name{
+    padding-top: 20% !important;
+  }
   .welcome-text {
     font-size: 35px;
     margin-bottom: 0%;
