@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./header.css";
 import { NavLink } from "react-router-dom";
 import { FaSun } from "react-icons/fa";
-import { BsFillMoonStarsFill, BsPersonFill } from "react-icons/bs";
-import { FaAngleRight, FaAngleLeft, FaBars } from "react-icons/fa";
+import { BsFillMoonStarsFill, BsPersonFill, BsBookmark, BsFillBookmarkFill } from "react-icons/bs";
 import {
   AiFillProject,
   AiTwotoneFolderOpen,
@@ -66,11 +65,11 @@ export const Header = ({ handleClick, isOn }) => {
 
         {/*  Mobile Navigation Bar */}
         <div className="mobile-nav-bar">
-          <div className="mobile-nav">
+          {/* <div className="mobile-nav">
             <button className="mobile-nav-btn" onClick={() => show(!visible)}>
               <FaBars size={24} />
             </button>
-          </div>
+          </div> */}
           <nav className={!visible ? "navbar" : ""}>
             <button
               type="button"
@@ -78,9 +77,9 @@ export const Header = ({ handleClick, isOn }) => {
               onClick={() => show(!visible)}
             >
               {!visible ? (
-                <FaAngleRight size={30} />
+                <BsFillBookmarkFill size={20} />
               ) : (
-                <FaAngleLeft size={30} />
+                <BsBookmark size={20} />
               )}
             </button>
             <div className="compressed-nav-bar">

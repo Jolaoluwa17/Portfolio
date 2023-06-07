@@ -54,3 +54,133 @@
 }
 
 /* Responsiveness */
+@media (max-width: 1040px) {
+  .illustration-one img {
+    margin-top: 20%;
+    width: 100%;
+    height: 300px;
+  }
+
+}
+@media (max-width: 992px) {
+  .welcome-text {
+    font-size: 40px;
+  }
+}
+@media (max-width: 964px) {
+  .name p {
+    width: 90%;
+    text-align: justify;
+    font-size: 14px;
+  }
+  .illustration-one img {
+    margin-top: 20%;
+    width: 100%;
+    height: 250px;
+  }
+}
+@media (max-width: 831px){
+  .illustration-one img {
+    margin-top: 20%;
+    width: 100%;
+    height: 230px;
+  }
+}
+@media (max-width: 794px) {
+  .welcome-text {
+    font-size: 35px;
+    margin-bottom: -5%;
+  }
+}
+@media (max-width: 768px) {
+  .illustration-one img {
+    margin-top: 20%;
+    width: 100%;
+    height: 220px;
+  }
+}
+@media (max-width: 700px) {
+  .name {
+    width: 45%;
+  }
+  .welcome-text {
+    font-size: 30px;
+    margin-bottom: -10%;
+  }
+  .name p {
+    font-size: 12px;
+  }
+  .illustration-one {
+    width: 55%;
+  }
+}
+@media (max-width: 651px) {
+  .illustration-one img {
+    margin-top: 20%;
+    width: 100%;
+    height: 200px;
+  }
+}
+@media (max-width: 601px) {
+  .illustration-one img {
+    margin-top: 20%;
+    width: 100%;
+    height: 190px;
+  }
+}
+@media (max-width: 570px) {
+  .illustration-one {
+    width: 0%;
+    display: none;
+  }
+  .name {
+    width: 100%;
+  }
+  .welcome-text {
+    font-size: 40px;
+    margin-bottom: 0%;
+  }
+  .name p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 485px) {
+  .welcome-text {
+    font-size: 35px;
+    margin-bottom: 0%;
+  }
+  .name p {
+    font-size: 14px;
+  }
+  .name .hire-btn {
+    padding: 10px;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    background-color: #fe5b02;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80px;
+    margin-top: 5%;
+  }
+}
+@media (max-width: 380px) {
+  .name {
+    padding-top: 15%;
+  }
+}
+@media (max-width: 325px) {
+  .welcome-text {
+    font-size: 33px;
+    margin-bottom: 0%;
+  }
+  .name p {
+    font-size: 13px;
+  }
+}
+
