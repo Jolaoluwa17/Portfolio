@@ -125,14 +125,17 @@
     width: 100%;
     margin-bottom: 4%;
   }
-  .marTop {
-    margin-top: 4% !important;
+  .send-btn button {
+    margin-top: 3%;
   }
+  /* .marTop {
+    margin-top: 4% !important;
+  } */
 }
 
 @media (max-width: 426px) {
   .marTop {
-    margin-top: 6% !important;
+    margin-top: 4% !important;
   }
 }
 
