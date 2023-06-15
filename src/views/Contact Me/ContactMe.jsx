@@ -135,17 +135,17 @@ export const ContactMe = ({ handleClick, isOn }) => {
                       id="outlined-basic"
                       label="Name"
                       variant="outlined"
-                      style={{ marginBottom: "4%", marginTop: "6%" }}
+                      style={{ marginBottom: "4%" }}
                       value={formData.name}
                       onChange={handleChange}
                       name="name"
-                      className="widhun"
+                      className="widhun marTop"
                     />
                     <TextField
                       id="outlined-basic"
                       label="Email"
                       variant="outlined"
-                      style={{ marginBottom: "4%", marginTop: "6%" }}
+                      style={{ marginBottom: "4%" }}
                       value={formData.email}
                       onChange={handleChange}
                       name="email"

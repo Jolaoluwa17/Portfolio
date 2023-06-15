@@ -1,8 +1,8 @@
 .contact-me {
   padding-left: 13%;
-    padding-right: 7%;
-    width: 80%;
-    height: 100vh;
+  padding-right: 7%;
+  width: 80%;
+  height: 100vh;
 }
 .contact-container {
   min-height: calc(80vh - 5px * 2);
@@ -94,7 +94,7 @@
   border-color: black;
 }
 
-.widhun{
+.widhun {
   width: 48%;
 }
 /* Responsiveness */
@@ -106,7 +106,6 @@
     width: 100%;
     height: 80%;
   }
-
 }
 
 @media (max-width: 769px) {
@@ -122,18 +121,23 @@
   .contact-container {
     padding-top: 15%;
   }
+  .widhun {
+    width: 100%;
+    margin-bottom: 4%;
+  }
+  .marTop {
+    margin-top: 4% !important;
+  }
 }
 
 @media (max-width: 426px) {
-
-  .widhun{
-    width: 100%;
-    margin-bottom: 4%;
+  .marTop {
+    margin-top: 6% !important;
   }
 }
 
 @media (max-width: 376px) {
-  .contact-me-title p{
+  .contact-me-title p {
     font-size: 14px;
   }
   .contact-container {
@@ -142,19 +146,18 @@
 }
 
 @media (max-width: 353px) {
-  .contact-me-title p{
+  .contact-me-title p {
     font-size: 14px;
   }
-  .contact-me-title h1{
+  .contact-me-title h1 {
     font-size: 30px;
   }
 }
 @media (max-width: 332px) {
-  
-  .contact-me-title p{
+  .contact-me-title p {
     font-size: 14px;
   }
-  .contact-me-title h1{
+  .contact-me-title h1 {
     font-size: 28px;
   }
 }
