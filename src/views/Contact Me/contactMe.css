@@ -119,15 +119,13 @@
 }
 
 @media (max-width: 500px) {
-  .contact-me {
-    padding-top: 10%;
+  .contact-container {
+    padding-top: 15%;
   }
 }
 
 @media (max-width: 426px) {
-  .contact-me {
-    padding-top: 10%;
-  }
+
   .widhun{
     width: 100%;
     margin-bottom: 4%;
@@ -137,6 +135,9 @@
 @media (max-width: 376px) {
   .contact-me-title p{
     font-size: 14px;
+  }
+  .contact-container {
+    padding-top: 25%;
   }
 }
 
@@ -149,6 +150,7 @@
   }
 }
 @media (max-width: 332px) {
+  
   .contact-me-title p{
     font-size: 14px;
   }

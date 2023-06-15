@@ -135,7 +135,7 @@ export const ContactMe = ({ handleClick, isOn }) => {
                       id="outlined-basic"
                       label="Name"
                       variant="outlined"
-                      style={{ marginBottom: "4%" }}
+                      style={{ marginBottom: "4%", marginTop: "6%" }}
                       value={formData.name}
                       onChange={handleChange}
                       name="name"
@@ -145,7 +145,7 @@ export const ContactMe = ({ handleClick, isOn }) => {
                       id="outlined-basic"
                       label="Email"
                       variant="outlined"
-                      style={{ marginBottom: "4%" }}
+                      style={{ marginBottom: "4%", marginTop: "6%" }}
                       value={formData.email}
                       onChange={handleChange}
                       name="email"
