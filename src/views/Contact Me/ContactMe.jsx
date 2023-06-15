@@ -135,25 +135,27 @@ export const ContactMe = ({ handleClick, isOn }) => {
                       id="outlined-basic"
                       label="Name"
                       variant="outlined"
-                      style={{ width: "48%" }}
+                      style={{ marginBottom: "4%" }}
                       value={formData.name}
                       onChange={handleChange}
                       name="name"
+                      className="widhun"
                     />
                     <TextField
                       id="outlined-basic"
                       label="Email"
                       variant="outlined"
-                      style={{ width: "48%" }}
+                      style={{ marginBottom: "4%" }}
                       value={formData.email}
                       onChange={handleChange}
                       name="email"
+                      className="widhun"
                     />
                     <TextField
                       id="outlined-basic"
                       label="Subject"
                       variant="outlined"
-                      style={{ width: "100%", marginTop: "4%" }}
+                      style={{ width: "100%", marginBottom: "4%" }}
                       value={formData.subject}
                       onChange={handleChange}
                       name="subject"
@@ -163,7 +165,7 @@ export const ContactMe = ({ handleClick, isOn }) => {
                       label="Message"
                       multiline
                       rows={4}
-                      style={{ width: "100%", marginTop: "4%" }}
+                      style={{ width: "100%" }}
                       value={formData.message}
                       onChange={handleChange}
                       name="message"
