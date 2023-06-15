@@ -137,6 +137,9 @@
   .marTop {
     margin-top: 4% !important;
   }
+  .contact-container {
+    padding-top: 21.5%;
+  }
 }
 
 @media (max-width: 376px) {
