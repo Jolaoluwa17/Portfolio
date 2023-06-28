@@ -47,11 +47,11 @@
   bottom: 274px;
   transition: 0.5s;
 }
-.dark-mode .intro{
+.dark-mode .intro {
   background-color: white;
   color: black;
 }
-.dark-mode .prog-lang ul li{
+.dark-mode .prog-lang ul li {
   color: black;
 }
 .project-card:hover {
@@ -72,7 +72,6 @@
 .intro .intro-content {
   visibility: hidden;
   opacity: 0;
-  width: 100%;
 }
 .intro p {
   font-weight: 600;
@@ -118,4 +117,20 @@
   opacity: 1;
   pointer-events: auto;
   cursor: pointer;
+}
+
+/*Responsiveness*/
+@media (max-width: 426px) {
+  .intro {
+    width: 340px;
+    bottom: 244px;
+  }
+  .projects-title {
+    padding-top: 14%;
+  }
+  .project-card:hover .intro {
+    height: 220px;
+    bottom: 244px;
+    backdrop-filter: blur(5px);
+  }
 }
