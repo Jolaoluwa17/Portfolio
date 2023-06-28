@@ -20,3 +20,10 @@
 .skills-content p{
     text-align: justify;
 }
+
+/* Responsiveness */
+@media (max-width: 1025px) {
+  .skills .skills-container{
+     width: 40%;
+  }
+}

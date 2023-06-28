@@ -72,6 +72,7 @@
 .intro .intro-content {
   visibility: hidden;
   opacity: 0;
+  width: 100%;
 }
 .intro p {
   font-weight: 600;
@@ -88,7 +89,7 @@
   padding: 0px;
 }
 .prog-lang ul li {
-  width: 90px;
+  width: 20%;
   padding: 0px 0px 0px 20px;
 }
 .interact-btn {
