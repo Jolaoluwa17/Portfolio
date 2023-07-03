@@ -1,0 +1,119 @@
+.skillItem {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: transform 0.3s ease;
+  width: 100%;
+  cursor: pointer;
+}
+
+.skillItem:hover {
+  transform: scale(1.1);
+}
+
+.progress-line {
+  background-color: black;
+  height: 5px;
+  border-radius: 10px;
+  position: relative;
+}
+.light-mode .progress-line{
+  background-color: white;
+}
+
+.progress-line span {
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: left;
+  transform-origin: left;
+  -webkit-animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  height: 100%;
+  border-radius: 10px;
+  position: absolute;
+  background-color: #e74fd5;
+  transition: 1s all;
+}
+
+.hide {
+  display: none;
+}
+
+.progress-line span.animate {
+  -webkit-animation: animate 1.5s 0.5s cubic-bezier(1, 0, 0.5, 1) forwards;
+  animation: animate 1.5s 0.5s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@-webkit-keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes animate {
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+
+@keyframes animate {
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+
+.skillItems {
+  width: 80%;
+  margin-left: 1%;
+}
+
+.skillItem {
+  height: 55px;
+  background-color: white;
+}
+.dark-mode .skillItem{
+  background-color: black;
+}
+.dark-mode .skillInfo{
+  color: white;
+}
+
+.skillInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: black;
+
+}
+
+.skillInfo p {
+  -webkit-animation: showText 0.5s 1s linear forwards;
+  animation: showText 0.5s 1s linear forwards;
+}
+
+.skillCardHolder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 425px) {
+  .skillItems {
+    width: 100%;
+    margin-top: 50px;
+  }
+}

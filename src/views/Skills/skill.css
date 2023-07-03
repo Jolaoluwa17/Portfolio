@@ -3,13 +3,30 @@
   margin-left: 10%;
   margin-right: 10%;
   height: 100%;
+  display: flex;
 }
-.main-skills{
+.new {
+  display: flex;
+  width: 100%;
+}
+.main-skills {
   height: 100vh;
 }
 .skills .skills-container {
   width: 50%;
   padding-top: 8%;
+}
+.rotating-cube-const {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .skills-header {
@@ -17,13 +34,13 @@
   width: 100%;
   margin-top: 10%;
 }
-.skills-content p{
-    text-align: justify;
+.skills-content p {
+  text-align: justify;
 }
 
 /* Responsiveness */
 @media (max-width: 1025px) {
-  .skills .skills-container{
-     width: 40%;
+  .skills .skills-container {
+    width: 40%;
   }
 }

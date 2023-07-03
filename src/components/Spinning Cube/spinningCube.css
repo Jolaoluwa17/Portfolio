@@ -112,15 +112,3 @@
   width: 20px;
   height: 20px;
 }
-
-/* Responsiveness */
-@media (max-width: 1025px) {
-  .box-container {
-    left: 65%;
-  }
-  .box-container {
-    /* height: 50vh;
-    width: 30vw; */
-    
-  }
-}
