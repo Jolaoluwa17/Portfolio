@@ -34,31 +34,33 @@ export const Projects = ({ isOn }) => {
                 alt=""
               />
             </div>
-            <div className="intro">
-              <p style={{ fontSize: "20px", fontFamily: "Playfair" }}>
-                Library Management System
-              </p>
-              <div className="intro-content">
-                <div className="tech-used">
-                  <div className="title">
-                    <p>Technology Used</p>
-                  </div>
-                  <div className="prog-lang">
-                    <ul>
-                      <li style={{ listStyle: "none" }}>React Js</li>
-                      <li style={{ listStyle: "square" }}>CSS</li>
-                      <li style={{ listStyle: "square" }}>NodeJs</li>
-                      <li style={{ listStyle: "none" }}>ExpressJs</li>
-                      <li style={{ listStyle: "square" }}>MongoDB</li>
-                      <li style={{ listStyle: "square" }}>MaterialUI</li>
-                    </ul>
-                  </div>
-                  <div className="interact-btn">
-                    <div className="view-btn">
-                      <button onClick={handleView}>View</button>
+            <div className="new">
+              <div className="intro">
+                <p style={{ fontSize: "20px", fontFamily: "Playfair" }}>
+                  Library Management System
+                </p>
+                <div className="intro-content">
+                  <div className="tech-used">
+                    <div className="title">
+                      <p>Technology Used</p>
                     </div>
-                    <div className="git-btn">
-                      <button onClick={handleGit}>GitHub</button>
+                    <div className="prog-lang">
+                      <ul>
+                        <li style={{ listStyle: "none" }}>React Js</li>
+                        <li style={{ listStyle: "square" }}>CSS</li>
+                        <li style={{ listStyle: "square" }}>NodeJs</li>
+                        <li style={{ listStyle: "none" }}>ExpressJs</li>
+                        <li style={{ listStyle: "square" }}>MongoDB</li>
+                        <li style={{ listStyle: "square" }}>MaterialUI</li>
+                      </ul>
+                    </div>
+                    <div className="interact-btn">
+                      <div className="view-btn">
+                        <button onClick={handleView}>View</button>
+                      </div>
+                      <div className="git-btn">
+                        <button onClick={handleGit}>GitHub</button>
+                      </div>
                     </div>
                   </div>
                 </div>
