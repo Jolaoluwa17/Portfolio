@@ -24,7 +24,7 @@
 .dark-mode .project-card {
   box-shadow: rgba(255, 255, 255, 0.16) 0px 1px 4px;
   border-bottom: #e74fd5 2px solid;
-  width: 340px;
+  width: 100%;
 }
 .project-card img {
   height: 100%;
@@ -158,14 +158,11 @@
   }
 }
 @media (max-width: 426px) {
-  /* .projects {
-    width: 82%;
-    padding-left: 8.5%;
-    padding-right: 7.5%;
-    height: 100vh;
-  } */
   .projects {
     height: 100%;
+    width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
   }
   .projects-title {
     padding-top: 17%;
