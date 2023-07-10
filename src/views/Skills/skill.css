@@ -60,12 +60,20 @@
     font-size: 13px;
   }
 }
-@media (max-width: 426px) {
+@media (max-width: 550px) {
   .rotating-cube-const{
     display: none;
   }
   .skills .skills-container {
     width: 100%;
     margin-top: 20px;
+  }
+  .skills-content{
+    font-size: 15px;
+  }
+}
+@media (max-width: 426px) {
+  .skills-content{
+    font-size: 13px;
   }
 }
