@@ -85,7 +85,7 @@ export const Projects = ({ isOn }) => {
           <div className="project-card">
             <div className="image-container">
               <img
-                src="https://1drv.ms/i/s!AhE8Wzn-C4HTyHCrJuDPFa1MGkTm?e=2k4dTT"
+                src="/Images/tic-tac-toe2.png"
                 alt=""
               />
             </div>

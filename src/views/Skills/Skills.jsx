@@ -1,6 +1,5 @@
 import React from "react";
 import "./skill.css";
-// import { SpinningCube } from "../../components/Spinning Cube/SpinningCube";
 import SkillBar from "../../components/Skills Bar/SkillBar";
 import { Icons } from "../../components/Icons/Icons";
 import AOS from "aos";
