@@ -149,6 +149,12 @@
 }
 @media (max-width: 426px) {
   .projects {
+    width: 82%;
+    padding-left: 8.5%;
+    padding-right: 7.5%;
+    height: 100vh;
+  }
+  .projects {
     height: 100%;
   }
   .projects-title {
