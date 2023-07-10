@@ -111,9 +111,15 @@
   justify-content: space-between;
 }
 
-@media screen and (max-width: 425px) {
+/* Responsiveness */
+@media(max-width: 425px) {
   .skillItems {
     width: 100%;
     margin-top: 50px;
+  }
+}
+@media (max-width: 810px) {
+  .skillInfo{
+    font-size: 14px;
   }
 }

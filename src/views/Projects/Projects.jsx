@@ -19,6 +19,12 @@ export const Projects = ({ isOn }) => {
       "_blank"
     );
   };
+  const handleViewTicTacToe = () => {
+    window.open("https://tic-tac-toe-pi-gold.vercel.app/", "_blank");
+  };
+  const handleGitTicTacToe = () => {
+    window.open("https://github.com/Jolaoluwa17/tic-tac-toe", "_blank");
+  };
   return (
     <div className={`projects-root ${isOn ? "dark-mode" : "light-mode"}`}>
       <div className={`projects ${isOn ? "dark-mode" : "light-mode"}`}>
@@ -79,7 +85,7 @@ export const Projects = ({ isOn }) => {
           <div className="project-card">
             <div className="image-container">
               <img
-                src="https://res.cloudinary.com/dneawlwcp/image/upload/v1685639086/Portfolio/Latest%20Projects/Screenshot_2023-06-01_180418_yts9gj.png"
+                src="https://1drv.ms/i/s!AhE8Wzn-C4HTyHCrJuDPFa1MGkTm?e=2k4dTT"
                 alt=""
               />
             </div>
@@ -95,20 +101,17 @@ export const Projects = ({ isOn }) => {
                     </div>
                     <div className="prog-lang">
                       <ul>
-                        <li style={{ listStyle: "none" }}>React Js</li>
+                        <li style={{ listStyle: "none" }}>Next Js</li>
                         <li style={{ listStyle: "square" }}>CSS</li>
-                        <li style={{ listStyle: "square" }}>NodeJs</li>
-                        <li style={{ listStyle: "none" }}>ExpressJs</li>
-                        <li style={{ listStyle: "square" }}>MongoDB</li>
-                        <li style={{ listStyle: "square" }}>MaterialUI</li>
+                        <li style={{ listStyle: "square" }}>JavaScript</li>
                       </ul>
                     </div>
                     <div className="interact-btn">
                       <div className="view-btn">
-                        <button onClick={handleView}>View</button>
+                        <button onClick={handleViewTicTacToe}>View</button>
                       </div>
                       <div className="git-btn">
-                        <button onClick={handleGit}>GitHub</button>
+                        <button onClick={handleGitTicTacToe}>GitHub</button>
                       </div>
                     </div>
                   </div>
@@ -116,64 +119,14 @@ export const Projects = ({ isOn }) => {
               </div>
             </div>
             <div className="content">
-              The Library Management System is a comprehensive software solution
-              that streamlines library operations. It offers features such as
-              catalog management, borrower registration, book
-              check-in/check-out, and reporting. With an intuitive interface, it
-              simplifies library tasks, enhances efficiency, and facilitates
-              seamless organization and access to library resources.
+              The Tic Tac Toe game developed using Next.js is a modern web
+              application that brings the classic game to life with a responsive
+              user interface. Enjoy the seamless functionality, appealing
+              design, and easy-to-use interface while playing this interactive
+              game on various devices. Experience the power of Next.js in
+              creating engaging web applications.
             </div>
           </div>
-
-          <div className="project-card">
-            <div className="image-container">
-              <img
-                src="https://res.cloudinary.com/dneawlwcp/image/upload/v1685639086/Portfolio/Latest%20Projects/Screenshot_2023-06-01_180418_yts9gj.png"
-                alt=""
-              />
-            </div>
-            <div className="new">
-              <div className="intro">
-                <p style={{ fontSize: "20px", fontFamily: "Playfair" }}>
-                  Tic-Tac-Toe
-                </p>
-                <div className="intro-content">
-                  <div className="tech-used">
-                    <div className="title">
-                      <p>Technology Used</p>
-                    </div>
-                    <div className="prog-lang">
-                      <ul>
-                        <li style={{ listStyle: "none" }}>React Js</li>
-                        <li style={{ listStyle: "square" }}>CSS</li>
-                        <li style={{ listStyle: "square" }}>NodeJs</li>
-                        <li style={{ listStyle: "none" }}>ExpressJs</li>
-                        <li style={{ listStyle: "square" }}>MongoDB</li>
-                        <li style={{ listStyle: "square" }}>MaterialUI</li>
-                      </ul>
-                    </div>
-                    <div className="interact-btn">
-                      <div className="view-btn">
-                        <button onClick={handleView}>View</button>
-                      </div>
-                      <div className="git-btn">
-                        <button onClick={handleGit}>GitHub</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="content">
-              The Library Management System is a comprehensive software solution
-              that streamlines library operations. It offers features such as
-              catalog management, borrower registration, book
-              check-in/check-out, and reporting. With an intuitive interface, it
-              simplifies library tasks, enhances efficiency, and facilitates
-              seamless organization and access to library resources.
-            </div>
-          </div>
-          
         </div>
       </div>
     </div>

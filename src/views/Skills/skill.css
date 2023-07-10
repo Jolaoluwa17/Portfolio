@@ -8,6 +8,7 @@
 .new {
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
 }
 .main-skills {
   height: 100vh;
@@ -41,6 +42,30 @@
 /* Responsiveness */
 @media (max-width: 1025px) {
   .skills .skills-container {
-    width: 40%;
+    width: 50%;
+  }
+}
+@media (max-width: 1024px) {
+  .skills-content{
+    font-size: 15px;
+  }
+}
+@media (max-width: 925px) {
+  .skills-content{
+    font-size: 14px;
+  }
+}
+@media (max-width: 810px) {
+  .skills-content{
+    font-size: 13px;
+  }
+}
+@media (max-width: 426px) {
+  .rotating-cube-const{
+    display: none;
+  }
+  .skills .skills-container {
+    width: 100%;
+    margin-top: 20px;
   }
 }

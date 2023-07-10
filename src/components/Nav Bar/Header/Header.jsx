@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./header.css";
 import { NavLink } from "react-router-dom";
 import { FaSun } from "react-icons/fa";
-import { BsFillMoonStarsFill, BsPersonFill, BsBookmark, BsFillBookmarkFill } from "react-icons/bs";
+import { BsFillMoonStarsFill, BsPersonFill } from "react-icons/bs";
 import {
   AiFillProject,
   AiTwotoneFolderOpen,
@@ -13,6 +13,8 @@ import {
 } from "react-icons/ai";
 import { GiSkills } from "react-icons/gi";
 import { useLocation } from "react-router-dom";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoCloseSharp } from "react-icons/io5";
 
 export const Header = ({ handleClick, isOn }) => {
   const [visible, show] = useState(false);
@@ -44,13 +46,7 @@ export const Header = ({ handleClick, isOn }) => {
             >
               <li className="nav-hover-effect">Projects</li>
             </NavLink>
-            <NavLink
-              to="/portfolio"
-              className="no-underline"
-              activeclassname="active"
-            >
-              <li className="nav-hover-effect">Resume</li>
-            </NavLink>
+            <li className="nav-hover-effect">Resume</li>
             <li className="mode-changer">
               <button
                 className={`toggle-button ${isOn ? "on" : "off"}`}
@@ -65,11 +61,6 @@ export const Header = ({ handleClick, isOn }) => {
 
         {/*  Mobile Navigation Bar */}
         <div className="mobile-nav-bar">
-          {/* <div className="mobile-nav">
-            <button className="mobile-nav-btn" onClick={() => show(!visible)}>
-              <FaBars size={24} />
-            </button>
-          </div> */}
           <nav className={!visible ? "navbar" : ""}>
             <button
               type="button"
@@ -77,9 +68,9 @@ export const Header = ({ handleClick, isOn }) => {
               onClick={() => show(!visible)}
             >
               {!visible ? (
-                <BsFillBookmarkFill size={20} />
+                <GiHamburgerMenu size={20} />
               ) : (
-                <BsBookmark size={20} />
+                <IoCloseSharp size={20} />
               )}
             </button>
             <div className="compressed-nav-bar">
@@ -93,7 +84,8 @@ export const Header = ({ handleClick, isOn }) => {
                   activeclassname="active1"
                 >
                   <li className="nav-hover-effect">
-                    <BsPersonFill /> About Me
+                    <BsPersonFill />{" "}
+                    <div style={{ marginLeft: "15px" }}>About Me</div>
                   </li>
                 </NavLink>
                 <NavLink
@@ -102,7 +94,8 @@ export const Header = ({ handleClick, isOn }) => {
                   activeclassname="active1"
                 >
                   <li className="nav-hover-effect">
-                    <GiSkills /> My Skills
+                    <GiSkills />{" "}
+                    <div style={{ marginLeft: "15px" }}> My Skills </div>
                   </li>
                 </NavLink>
                 <NavLink
@@ -111,18 +104,28 @@ export const Header = ({ handleClick, isOn }) => {
                   activeclassname="active1"
                 >
                   <li className="nav-hover-effect">
-                    <AiFillProject /> Projects
+                    <AiFillProject />{" "}
+                    <div style={{ marginLeft: "15px" }}>Projects</div>
                   </li>
                 </NavLink>
-                <NavLink
-                  to="/portfolio"
-                  className="no-underline"
-                  activeclassname="active1"
-                >
-                  <li className="nav-hover-effect">
-                    <AiTwotoneFolderOpen /> Resume
-                  </li>
-                </NavLink>
+                <li className="no-underline nav-hover-effect">
+                  <AiTwotoneFolderOpen />{" "}
+                  <div style={{ marginLeft: "15px" }}>Resume</div>
+                </li>
+                <li>
+                  <div className="compressed-mode-changer">
+                    {isOn ? <BsFillMoonStarsFill /> : <FaSun />}
+                    {isOn ? (
+                      <div onClick={handleClick} className="text">
+                        Dark Mode
+                      </div>
+                    ) : (
+                      <div onClick={handleClick} className="text">
+                        Light Mode
+                      </div>
+                    )}
+                  </div>
+                </li>
               </ul>
               <div className="contactContainer">
                 <div className="contact-holder">
@@ -138,14 +141,6 @@ export const Header = ({ handleClick, isOn }) => {
                   <div className="contact-icons">
                     <AiFillLinkedin />
                   </div>
-                </div>
-                <div className="compressed-mode-changer">
-                  {isOn ? <BsFillMoonStarsFill /> : <FaSun />}
-                  {isOn ? (
-                    <div onClick={handleClick}>Dark Mode</div>
-                  ) : (
-                    <div onClick={handleClick}>Light Mode</div>
-                  )}
                 </div>
               </div>
             </div>

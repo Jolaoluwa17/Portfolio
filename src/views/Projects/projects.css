@@ -10,7 +10,6 @@
 .projects-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* justify-content: space-between; */
   grid-gap: 1.5em;
 }
 .project-card {
@@ -95,6 +94,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0px;
+  height: 40px;
 }
 .prog-lang ul li {
   width: 20%;
@@ -137,7 +137,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 849px) {
   .projects-content {
     grid-template-columns: 1fr;
   }
