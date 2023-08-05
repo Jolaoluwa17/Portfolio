@@ -42,7 +42,7 @@ export const Projects = ({ isOn }) => {
             </div>
             <div className="new">
               <div className="intro">
-                <p style={{ fontSize: "20px", fontFamily: "Playfair" }}>
+                <p  className="intro-title">
                   Library Management System
                 </p>
                 <div className="intro-content">
@@ -91,7 +91,7 @@ export const Projects = ({ isOn }) => {
             </div>
             <div className="new">
               <div className="intro">
-                <p style={{ fontSize: "20px", fontFamily: "Playfair" }}>
+                <p className="intro-title">
                   Tic-Tac-Toe
                 </p>
                 <div className="intro-content">
