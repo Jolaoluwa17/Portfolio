@@ -247,7 +247,9 @@
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    background-color: red;
+  }
+  .dark-mode .profile-pic{
+    border: 2px black solid;
   }
   .profile-pic img {
     height: 100px;
@@ -309,7 +311,6 @@
     height: 80px;
     width: 80px;
     border-radius: 50%;
-    background-color: red;
   }
   .profile-pic img {
     height: 100%;
@@ -328,7 +329,6 @@
     height: 90px;
     width: 90px;
     border-radius: 50%;
-    background-color: red;
   }
   .profile-pic img {
     height: 100%;
@@ -363,7 +363,6 @@
     height: 90px;
     width: 90px;
     border-radius: 50%;
-    background-color: red;
   }
   .profile-pic img {
     height: 100%;

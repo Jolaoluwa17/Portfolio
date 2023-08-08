@@ -17,12 +17,35 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
 
 export const Header = ({ handleClick, isOn }) => {
+
+  const [randomImage, setRandomImage] = useState('/Images/wink.jpg'); // Default image source
+  const imageSources = [
+    '/Images/smile.jpg',
+    '/Images/wink.jpg',
+    '/Images/49422.jpg',
+    '/Images/54348.jpg',
+    // Add more image sources as needed
+  ];
+
+  const handleSidebarOpen = () => {
+    // Generate a random index to select a random image source from the array
+    const randomIndex = Math.floor(Math.random() * imageSources.length);
+    const randomImageSource = imageSources[randomIndex];
+
+    setRandomImage(randomImageSource);
+  };
+
   const [visible, show] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
     show(false); // Close the navigation bar when the location changes
   }, [location]);
+
+  const toggleSidebar = () => {
+    show(!visible); // Toggle sidebar visibility
+    handleSidebarOpen(); // Call the handleSidebarOpen function
+  };
 
   return (
     <div className={`header ${isOn ? "dark-mode" : "light-mode"}`}>
@@ -65,7 +88,7 @@ export const Header = ({ handleClick, isOn }) => {
             <button
               type="button"
               className="nav-btn"
-              onClick={() => show(!visible)}
+              onClick={toggleSidebar}
             >
               {!visible ? (
                 <GiHamburgerMenu size={20} />
@@ -75,7 +98,7 @@ export const Header = ({ handleClick, isOn }) => {
             </button>
             <div className="compressed-nav-bar">
               <div className="profile-pic">
-                <img src="" alt="" />
+                <img src={randomImage} alt="" />
               </div>
               <ul>
                 <NavLink
