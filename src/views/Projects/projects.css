@@ -217,7 +217,7 @@
   .prog-lang ul li {
     width: 20%;
     padding: 0px 0px 0px 20px;
-    font-size: 12px;
+    font-size: 12gridpx;
   }
   .interact-btn button {
     padding: 10px;
