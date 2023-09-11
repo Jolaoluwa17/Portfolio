@@ -25,6 +25,12 @@ export const Projects = ({ isOn }) => {
   const handleGitTicTacToe = () => {
     window.open("https://github.com/Jolaoluwa17/tic-tac-toe", "_blank");
   };
+  const handleViewScribbleEase= () => {
+    window.open("https://tic-tac-toe-pi-gold.vercel.app/", "_blank");
+  };
+  const handleGitScribbleEase = () => {
+    window.open("https://github.com/Jolaoluwa17/ScribbleEase", "_blank");
+  };
   return (
     <div className={`projects-root ${isOn ? "dark-mode" : "light-mode"}`}>
       <div className={`projects ${isOn ? "dark-mode" : "light-mode"}`}>
@@ -35,16 +41,54 @@ export const Projects = ({ isOn }) => {
         <div className="projects-content">
           <div className="project-card">
             <div className="image-container">
-              <img
-                src="https://res.cloudinary.com/dneawlwcp/image/upload/v1685639086/Portfolio/Latest%20Projects/Screenshot_2023-06-01_180418_yts9gj.png"
-                alt=""
-              />
+              <img src="/Images/2840443.jpg" alt="" />
             </div>
             <div className="new">
               <div className="intro">
-                <p  className="intro-title">
-                  Library Management System
-                </p>
+                <p className="intro-title">ScribbleEase</p>
+                <div className="intro-content">
+                  <div className="tech-used">
+                    <div className="title">
+                      <p>Technology Used</p>
+                    </div>
+                    <div className="prog-lang">
+                      <ul>
+                        <li style={{ listStyle: "none" }}>React Native</li>
+                        <li style={{ listStyle: "square" }}>CSS</li>
+                        <li style={{ listStyle: "square" }}>NodeJs</li>
+                        <li style={{ listStyle: "none" }}>ExpressJs</li>
+                        <li style={{ listStyle: "square" }}>MongoDB</li>
+                        <li style={{ listStyle: "square" }}>MaterialUI</li>
+                      </ul>
+                    </div>
+                    <div className="interact-btn">
+                      {/* <div className="view-btn-disabled" style={{backgroundcolor: "grey"}}>
+                        <button onClick={handleView} disabled={true}>View</button>
+                      </div> */}
+                      <div className="git-btn">
+                        <button onClick={handleGitScribbleEase}>GitHub</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="content">
+              ScribbleEase is your go-to notepad app for effortless note-taking
+              and organization. Its user-friendly interface ensures a smooth
+              experience, while the seamless integration of drawing tools and
+              cross-device synchronization makes it the perfect digital
+              companion for capturing your thoughts and ideas.
+            </div>
+          </div>
+
+          <div className="project-card">
+            <div className="image-container">
+              <img src="/Images/library.jpg" alt="" />
+            </div>
+            <div className="new">
+              <div className="intro">
+                <p className="intro-title">Library Management System</p>
                 <div className="intro-content">
                   <div className="tech-used">
                     <div className="title">
@@ -84,16 +128,11 @@ export const Projects = ({ isOn }) => {
 
           <div className="project-card">
             <div className="image-container">
-              <img
-                src="/Images/tic-tac-toe3.jpg"
-                alt=""
-              />
+              <img src="/Images/tic-tac-toe3.jpg" alt="" />
             </div>
             <div className="new">
               <div className="intro">
-                <p className="intro-title">
-                  Tic-Tac-Toe
-                </p>
+                <p className="intro-title">Tic-Tac-Toe</p>
                 <div className="intro-content">
                   <div className="tech-used">
                     <div className="title">

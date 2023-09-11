@@ -196,10 +196,7 @@ export const ContactMe = ({ handleClick, isOn }) => {
                   <GiCancel />
                 </div>
               )}
-              <img
-                src="https://res.cloudinary.com/dneawlwcp/image/upload/v1685622473/Portfolio/illustrations/4111242_1_snfz7n.png"
-                alt=""
-              />
+              <img src="/Images/contactMe.png" alt="" />
               {/* <iframe
               src="https://embed.lottiefiles.com/animation/94599"
               style={{ width: "500px", height: "500px", border: "none" }}

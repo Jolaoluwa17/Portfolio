@@ -47,10 +47,7 @@ export const FirstSection = ({ isOn }) => {
         </Link>
       </div>
       <div className="illustration-one">
-        <img
-          src="https://res.cloudinary.com/dneawlwcp/image/upload/v1685541918/Portfolio/illustrations/19362653_kcxszx.png"
-          alt=""
-        />
+        <img src="/Images/landingPage.png" alt="" />
       </div>
     </div>
   );
