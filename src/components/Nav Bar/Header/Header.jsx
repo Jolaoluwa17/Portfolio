@@ -47,6 +47,10 @@ export const Header = ({ handleClick, isOn }) => {
     handleSidebarOpen(); // Call the handleSidebarOpen function
   };
 
+  const handleResume = () => {
+    window.open("https://drive.google.com/file/d/1OrEiyFpEjLkmXGJZfqKviBQAkWjKKJAF/view?usp=drive_link", "_blank");
+  };
+
   return (
     <div className={`header ${isOn ? "dark-mode" : "light-mode"}`}>
       <div className="nav-bar">
@@ -69,7 +73,7 @@ export const Header = ({ handleClick, isOn }) => {
             >
               <li className="nav-hover-effect">Projects</li>
             </NavLink>
-            <li className="nav-hover-effect">Resume</li>
+            <li className="nav-hover-effect" style={{cursor: "pointer"}} onClick={handleResume}>Resume</li>
             <li className="mode-changer">
               <button
                 className={`toggle-button ${isOn ? "on" : "off"}`}

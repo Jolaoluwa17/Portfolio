@@ -11,7 +11,7 @@ export const SpinningCube = ({ isOn }) => {
             <img
               src="https://res.cloudinary.com/dneawlwcp/image/upload/v1682274773/Portfolio/pngfind.com-react-logo-png-6854970_ivljdf.png"
               alt=""
-            />{" "}
+            />
             ReactJs
           </div>
           <div className="card" id="back">

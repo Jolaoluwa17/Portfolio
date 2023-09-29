@@ -8,6 +8,7 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 AOS.init();
 
 export const Skills = ({ isOn }) => {
+
   return (
     <div className={`main-skills ${isOn ? "dark-mode" : "light-mode"}`}>
       <div className={`skills ${isOn ? "dark-mode" : "light-mode"}`}>

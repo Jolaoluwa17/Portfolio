@@ -25,9 +25,9 @@ export const Projects = ({ isOn }) => {
   const handleGitTicTacToe = () => {
     window.open("https://github.com/Jolaoluwa17/tic-tac-toe", "_blank");
   };
-  const handleViewScribbleEase= () => {
-    window.open("https://tic-tac-toe-pi-gold.vercel.app/", "_blank");
-  };
+  // const handleViewScribbleEase= () => {
+  //   window.open("https://tic-tac-toe-pi-gold.vercel.app/", "_blank");
+  // };
   const handleGitScribbleEase = () => {
     window.open("https://github.com/Jolaoluwa17/ScribbleEase", "_blank");
   };
