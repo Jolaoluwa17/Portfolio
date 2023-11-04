@@ -8,7 +8,6 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 AOS.init();
 
 export const Skills = ({ isOn }) => {
-
   return (
     <div className={`main-skills ${isOn ? "dark-mode" : "light-mode"}`}>
       <div className={`skills ${isOn ? "dark-mode" : "light-mode"}`}>
@@ -27,8 +26,13 @@ export const Skills = ({ isOn }) => {
               <p>
                 I am skilled and proficient in various programming languages,
                 with a strong focus on web development. With expertise in
-                ReactJS, JavaScript, HTML, and CSS, I possesses a comprehensive
-                understanding of the modern web development stack.
+                ReactJS, NextJS, React Native, JavaScript, HTML, and CSS, I
+                possesses a comprehensive understanding of the modern web
+                development stack. Furthermore, I am competent in backend
+                development, using technologies such as Node.js and Express.js
+                to create robust server-side applications. I have experience
+                working with MongoDB as a database system to ensure efficient
+                and reliable data management for web applications.
               </p>
               <br />
               <br />

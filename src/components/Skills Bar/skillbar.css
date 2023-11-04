@@ -1,7 +1,7 @@
 .skillItem {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   border-radius: 5px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -11,6 +11,9 @@
   transition: transform 0.3s ease;
   width: 100%;
   cursor: pointer;
+}
+.skillItems {
+  margin-top: 60px;
 }
 
 .skillItem:hover {
@@ -23,7 +26,7 @@
   border-radius: 10px;
   position: relative;
 }
-.light-mode .progress-line{
+.light-mode .progress-line {
   background-color: white;
 }
 
@@ -85,10 +88,10 @@
   height: 55px;
   background-color: white;
 }
-.dark-mode .skillItem{
+.dark-mode .skillItem {
   background-color: black;
 }
-.dark-mode .skillInfo{
+.dark-mode .skillInfo {
   color: white;
 }
 
@@ -97,7 +100,6 @@
   flex-direction: row;
   justify-content: space-between;
   color: black;
-
 }
 
 .skillInfo p {
@@ -112,14 +114,14 @@
 }
 
 /* Responsiveness */
-@media(max-width: 425px) {
+@media (max-width: 425px) {
   .skillItems {
     width: 100%;
     margin-top: 50px;
   }
 }
 @media (max-width: 810px) {
-  .skillInfo{
+  .skillInfo {
     font-size: 14px;
   }
 }

@@ -180,7 +180,7 @@ export const ContactMe = ({ handleClick, isOn }) => {
                           !formData.message
                         }
                       >
-                        Submit
+                        Send
                       </button>
                     </div>
                   </div>

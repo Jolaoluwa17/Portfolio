@@ -41,7 +41,7 @@ export const Projects = ({ isOn }) => {
         <div className="projects-content">
           <div className="project-card">
             <div className="image-container">
-              <img src="/Images/2840443.jpg" alt="" />
+              <img src="/Images/Notes.jpg" alt="" />
             </div>
             <div className="new">
               <div className="intro">

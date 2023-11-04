@@ -24,21 +24,19 @@ export const FirstSection = ({ isOn }) => {
             typeSpeed={100}
             deleteSpeed={100}
             delaySpeed={1000}
-            // onLoopDone={handleDone}
-            // onType={handleType}
           />
         </div>
         <p>
-          I am a front-end programmer based in Nigeria. I am passionate about
+          I am a front-end developer based in Nigeria. I am passionate about
           creating dynamic user experiences using UI effects and animations. I
           am a detail-oriented and organized problem-solver, and I value
           independence and teamwork equally. <br /> <br />
           In my free time, I enjoy outdoor activities, watching TV series, and
           reading English literature. As I am interested in all aspects of
           frontend development, I am always eager to work on ambitious projects
-          with positive and like-minded individuals. <br /> <br /> As a student
-          from Nigeria, I am actively seeking opportunities to develop my skills
-          and gain experience in the field of front-end development.
+          with positive and like-minded individuals. <br /> <br /> As a graduate
+          of Babcock University, I am actively seeking opportunities to develop
+          my skills and gain experience in the field of front-end development.
         </p>
         <Link to="/contactMe" style={{ textDecoration: "none" }}>
           <div className="hire-btn">

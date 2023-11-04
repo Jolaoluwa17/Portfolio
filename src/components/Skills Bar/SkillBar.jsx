@@ -143,14 +143,14 @@ const SkillBar = ({ isOn }) => {
         onMouseLeave={handleMouseLeave5}
       >
         <div className="skillInfo">
-          <p>BOOTSTRAP</p>
-          <p>90%</p>
+          <p>React Native</p>
+          <p>80%</p>
         </div>
         <div
           className={`progress-line ${isHovered5 ? "show" : "hide"}`}
-          data-percent="90%"
+          data-percent="80%"
         >
-          <span style={{ width: "90%" }}></span>
+          <span style={{ width: "80%" }}></span>
         </div>
       </div>
       <div
