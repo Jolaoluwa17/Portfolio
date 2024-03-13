@@ -19,7 +19,6 @@
   font-size: 22px;
 }
 .icon:hover {
-  color: #e74fd5 ;
   cursor: pointer;
 }
 .line-top {
@@ -46,10 +45,18 @@
   width: 2px;
   background-color: black;
 }
+.linkedIn:hover {
+  color: #0a66c2;
+}
+.instagram:hover {
+  color: #bc2a8d;
+}
+.twitter:hover {
+  color: #1da1f2;
+}
 
 /* Responsiveness */
 @media (max-width: 1040px) {
-  
 }
 @media (max-width: 768px) {
   .icon-root {

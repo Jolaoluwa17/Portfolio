@@ -13,17 +13,14 @@ import {
 } from "react-icons/ai";
 import { GiSkills } from "react-icons/gi";
 import { useLocation } from "react-router-dom";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { IoCloseSharp } from "react-icons/io5";
 
 export const Header = ({ handleClick, isOn }) => {
-
-  const [randomImage, setRandomImage] = useState('/Images/wink.jpg'); // Default image source
+  const [randomImage, setRandomImage] = useState("/Images/wink.jpg"); // Default image source
   const imageSources = [
-    '/Images/smile.jpg',
-    '/Images/wink.jpg',
-    '/Images/49422.jpg',
-    '/Images/54348.jpg',
+    "/Images/smile.jpg",
+    "/Images/wink.jpg",
+    "/Images/49422.jpg",
+    "/Images/54348.jpg",
     // Add more image sources as needed
   ];
 
@@ -48,7 +45,10 @@ export const Header = ({ handleClick, isOn }) => {
   };
 
   const handleResume = () => {
-    window.open("https://drive.google.com/file/d/1OrEiyFpEjLkmXGJZfqKviBQAkWjKKJAF/view?usp=drive_link", "_blank");
+    window.open(
+      "https://drive.google.com/file/d/1OrEiyFpEjLkmXGJZfqKviBQAkWjKKJAF/view?usp=drive_link",
+      "_blank"
+    );
   };
 
   return (
@@ -73,7 +73,13 @@ export const Header = ({ handleClick, isOn }) => {
             >
               <li className="nav-hover-effect">Projects</li>
             </NavLink>
-            <li className="nav-hover-effect" style={{cursor: "pointer"}} onClick={handleResume}>Resume</li>
+            <li
+              className="nav-hover-effect"
+              style={{ cursor: "pointer" }}
+              onClick={handleResume}
+            >
+              Resume
+            </li>
             <li className="mode-changer">
               <button
                 className={`toggle-button ${isOn ? "on" : "off"}`}
@@ -81,7 +87,11 @@ export const Header = ({ handleClick, isOn }) => {
               >
                 <div className="circle"></div>
               </button>
-              {isOn ? <BsFillMoonStarsFill /> : <FaSun />}
+              {isOn ? (
+                <BsFillMoonStarsFill color="#25b6f4" />
+              ) : (
+                <FaSun color="#f4ca25" />
+              )}
             </li>
           </ul>
         </div>
@@ -89,17 +99,19 @@ export const Header = ({ handleClick, isOn }) => {
         {/*  Mobile Navigation Bar */}
         <div className="mobile-nav-bar">
           <nav className={!visible ? "navbar" : ""}>
-            <button
-              type="button"
-              className="nav-btn"
-              onClick={toggleSidebar}
-            >
-              {!visible ? (
-                <GiHamburgerMenu size={20} />
-              ) : (
-                <IoCloseSharp size={20} />
-              )}
-            </button>
+            <div className="nav-btn">
+              <input
+                type="checkbox"
+                id="checkbox"
+                onChange={toggleSidebar}
+                checked={visible}
+              />
+              <label for="checkbox" className="toggle">
+                <div className="bars" id="bar1"></div>
+                <div className="bars" id="bar2"></div>
+                <div className="bars" id="bar3"></div>
+              </label>
+            </div>
             <div className="compressed-nav-bar">
               <div className="profile-pic">
                 <img src={randomImage} alt="" />

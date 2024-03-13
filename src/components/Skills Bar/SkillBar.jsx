@@ -58,14 +58,6 @@ const SkillBar = ({ isOn }) => {
     setIsHovered6(false);
   };
 
-  // const handleHover7 = () => {
-  //   setIsHovered1(true);
-  // };
-
-  // const handleMouseLeave7= () => {
-  //   setIsHovered1(false);
-  // };
-
   return (
     // <div className="skillSection" id="about">
     <div className={`skillItems ${isOn ? "dark-mode" : "light-mode"}`}>

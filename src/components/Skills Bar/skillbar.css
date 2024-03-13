@@ -99,6 +99,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   color: black;
 }
 
@@ -123,5 +124,10 @@
 @media (max-width: 810px) {
   .skillInfo {
     font-size: 14px;
+  }
+}
+@media (max-width: 769px) {
+  .skillItem {
+    margin-bottom: 20px;
   }
 }

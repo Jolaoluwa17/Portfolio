@@ -34,7 +34,7 @@ export const Skills = ({ isOn }) => {
                 working with MongoDB as a database system to ensure efficient
                 and reliable data management for web applications.
               </p>
-              <br />
+              {/* <br /> */}
               <br />
               <h3 style={{ fontWeight: "500" }}>Tools Used</h3>
               <p>

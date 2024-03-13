@@ -21,13 +21,13 @@ export const Icons = ({ isOn }) => {
         <div className="icon">
           <BsGithub />
         </div>
-        <div className="icon">
+        <div className="icon twitter">
           <AiOutlineTwitter />
         </div>
-        <div className="icon">
+        <div className="icon instagram">
           <AiFillInstagram />
         </div>
-        <div className="icon">
+        <div className="icon linkedIn">
           <AiFillLinkedin />
         </div>
         <div className="icon">
